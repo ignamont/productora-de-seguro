@@ -1,0 +1,24 @@
+.seccion {
+    display: flex;
+    align-items: center;
+    padding-right: 5em;
+    padding-left: 5em;
+    /* grid-template-columns: auto auto; */
+  }
+  
+  .columna {
+    font-size: 20px;
+    text-decoration: none;
+    align-items: left;
+    font-family: "Roboto", sans-serif;
+    /* height: 100vh; */
+    padding: 100px;
+    color: rgb(85, 82, 82);
+  }
+  
+  .columna_text {
+    padding: 10px;
+    color: rgb(85, 82, 82);
+    margin-left: 1em;
+  }
+  
