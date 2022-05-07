@@ -1,0 +1,21 @@
+.seccion{
+  display: flex;
+  align-items: center;
+  padding-right: 5em;
+  padding-left: 5em;
+  
+  .columna {
+    font-size: 20px;
+    text-decoration: none;
+    align-items: left;
+    font-family: "Roboto", sans-serif;
+    padding: 100px;
+
+    .columna_text {
+      padding: 10px;
+      color: rgb(85, 82, 82);
+      margin-left: 1em;
+    }
+  }
+}
+
