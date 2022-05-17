@@ -1,4 +1,4 @@
-.seccion {
+.secacerca {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,7 +9,7 @@
   padding-left: 5em;
 }
 
-.seccion .columna {
+.secacerca .columnaacerca {
   font-size: 20px;
   text-decoration: none;
   -webkit-box-align: left;
@@ -19,7 +19,7 @@
   padding: 100px;
 }
 
-.seccion .columna .columna_text {
+.secacerca .columnaacerca .columna_textacerca {
   padding: 10px;
   color: #555252;
   margin-left: 1em;

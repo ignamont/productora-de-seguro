@@ -1,19 +1,21 @@
-.seccion{
+$colorF:rgb(85, 82, 82);
+
+.secacerca{
   display: flex;
   align-items: center;
   padding-right: 5em;
   padding-left: 5em;
   
-  .columna {
+  .columnaacerca {
     font-size: 20px;
     text-decoration: none;
     align-items: left;
     font-family: "Roboto", sans-serif;
     padding: 100px;
 
-    .columna_text {
+    .columna_textacerca {
       padding: 10px;
-      color: rgb(85, 82, 82);
+      color: $colorF;
       margin-left: 1em;
     }
   }
