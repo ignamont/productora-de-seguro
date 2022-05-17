@@ -21,7 +21,21 @@
 
 .secacerca .columnaacerca .columna_textacerca {
   padding: 10px;
-  color: #555252;
   margin-left: 1em;
 }
-/*# sourceMappingURL=acerca_de_mi.css.map */
+
+.secacerca .columnaacerca .columna_textacerca-g {
+  color: #333;
+}
+
+.secacerca .columnaacerca .columna_textacerca-r {
+  color: red;
+}
+
+.secacerca .columnaacerca .columna_textacerca-a {
+  color: blue;
+}
+
+.secacerca .columnaacerca .columna_textacerca {
+  color: #333;
+}

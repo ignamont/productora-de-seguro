@@ -1,0 +1,46 @@
+$padding1: 10px;
+
+$colores:(
+  g:#333,
+  r:red,
+  a:blue,
+
+);
+
+.secacerca{
+  display: flex;
+  align-items: center;
+  padding-right: 5em;
+  padding-left: 5em;
+  
+  .columnaacerca {
+    font-size: 20px;
+    text-decoration: none;
+    align-items: left;
+    font-family: "Roboto", sans-serif;
+    padding: 100px;
+
+    .columna_textacerca {
+      padding: $padding1;
+      margin-left: 1em;
+
+    }
+
+    @each $nombre,$valor in $colores {
+      .columna_textacerca-#{$nombre}{
+        color: $valor;
+      }
+      
+    }
+    .columna_textacerca{
+      color: map-get($map: $colores, $key: g );
+    }
+  }
+}
+
+
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
