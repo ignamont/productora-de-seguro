@@ -1,5 +1,6 @@
 $padding1: 10px;
 
+/*Map*/
 $colores:(
   g:#333,
   r:red,
@@ -7,40 +8,47 @@ $colores:(
 
 );
 
-.secacerca{
+/*Extend*/
+ .secacerca__1{
   display: flex;
-  align-items: center;
+  align-items: center
+ }
+
+ @mixin colum {
+   text-decoration: none;
+   align-items: left;
+   font-family: "Roboto", sans-serif;
+   padding: 100px;
+ }
+
+.secacerca{
+  @extend .secacerca__1;
   padding-right: 5em;
   padding-left: 5em;
+
   
   .columnaacerca {
+    @include colum;   
     font-size: 20px;
-    text-decoration: none;
-    align-items: left;
-    font-family: "Roboto", sans-serif;
-    padding: 100px;
+   
 
     .columna_textacerca {
       padding: $padding1;
       margin-left: 1em;
 
     }
-
+      /*@Heach*/
     @each $nombre,$valor in $colores {
       .columna_textacerca-#{$nombre}{
         color: $valor;
       }
       
     }
+    
+/*Map Get*/
     .columna_textacerca{
       color: map-get($map: $colores, $key: g );
     }
   }
 }
 
-
-
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}

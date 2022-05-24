@@ -133,73 +133,29 @@ body {
 /* index */
 
 .cuerpoindex {
-  width: 100%;
-  height: 100%;
   background-image: url("../assets/images/presentacion1.jpg");
   background-size: cover;
-  background-attachment: fixed; 
-
-  background-position: top center ;
-
-  margin: 0;
-  padding: 0;
-
+  background-position: center center ;
 }
 
+/* servicios*/
 
-/*  --------------------------------------- */
-.seccion img {
-  padding: 100px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
-.seccion {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.columna {
-  font-size: 20px;
-  text-decoration: none;
-  align-items: left;
-  font-family: "Roboto", sans-serif;
-  height: 100vh;
-  padding: 100px;
-  color: rgb(85, 82, 82);
-}
-
-.columna_text {
-  height: 10vh;
-  padding: 10px;
-  color: rgb(85, 82, 82);
-  margin-left: 1em;
-}
 
 .backgroud-main {
   background-image: url("../assets/images/presentacion2.jpg");
   width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.backgroud-main {
   height: 100vh;
-  padding-top: 100px;
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .backgroud-main__presentacion {
-  margin: 1em;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); 
+  text-align: center;
   font-size: 30px;
-  margin-left: 16em;
   font-family: "Roboto", sans-serif;
 }
 
@@ -208,242 +164,188 @@ body {
   align-items: center;
   margin-left: 3em;
 }
-
 .backgroud-main__columnas {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  grid-row-gap: 5px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-}
 
-.backgroud-main__columna__columna1 {
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 16px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-  margin-left: 6em;
-}
-
-.backgroud-main__columna__columna2 {
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-  margin-left: 6em;
-}
-
-.backgroud-main__columna__columna3 {
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-  margin-left: 6em;
-}
-
-/* servicios*/
-
-
-.backgroud-main {
-  height: 100vh;
-  padding-top: 100px;
-  background-size: cover;
-}
-
-.backgroud-main__presentacion {
-  margin: 1em; 
-  /* align-items: center; */
-  color: rgb(255, 255, 255); 
- text-align: center;
-  font-size: 30px;
-  font-family: "Roboto", sans-serif;
-}
-
-
-
-.backgroud-main__columnas {
-  /* display: grid; */
-  /* grid-template-rows: repeat(3, 1fr); */
-  /* grid-template-columns: 1fr; */
  display: flex;
  flex-grow: 1; 
  justify-content: center;
-  /* justify-items: center;
-  align-items: center;
-  grid-row-gap: 5px; */
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: "Roboto", sans-serif;
-  /* text-align: center; */
-
 }
 
 @media (min-width: 700px) {
   .backgroud-main__columnas {
-    /* display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto auto auto; */
+
     grid-row-gap: 5px;
     color: rgb(255, 255, 255);
     font-size: 20px;
   }
 }
 
-.backgroud-main__columna__columna1 {
-  /* justify-content: center; */
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 16px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-   margin:1em; 
-   }
 
-.backgroud-main__columna__columna2 {
-  /* justify-content: center; */
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-  /* margin-left: 6em; */
-  margin:1em;
-  
 
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
 }
 
-.backgroud-main__columna__columna3 {
-  /* justify-content: center; */
-  margin-top: 3.5em;
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  background-color: rgb(20, 197, 64);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 25px;
-  margin:1em; 
-  
-  /* margin-left: 6em; */
+.grid > article {
+  background-color: papayawhip;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
+
+.grid .text {
+  padding: 20px;
+}
+
 
 
 /* Empresa */
 
-.cuerpoempresa{
 
-  height: 100%;
+.bg-video-wrap {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  
+  height: 100vh;
+  background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover;
+}
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%); */
+  background-size: 3px 3px;
+  z-index: 2;
+}
+.empresah1  {
+  text-align: center;
+  color: #333;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  max-width: 400px;
+  width: 100%;
+  height: 50%;
 }
 
-section#empresa {
-  margin: 5em;
-  padding: 5em;
-}
+.empresap  {
+  text-align: center;
+  color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
 
-#empresa .empresa {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+ 
+  width: 50%;
+  height: 20px;
 }
-
-@media (min-width: 700px) {
-  #empresa .empresa {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-  }
-}
-
-.empresa__presentacion {
-  font-family: "Roboto", sans-serif;
-  width: 300px;
-  height: 300px;
-  color: rgb(85, 82, 82);
-}
-
-.empresa__presentacion h3 {
-  padding-top: 10px;
-}
-
 /* contacto */ 
 
 .contacto{
-  height: 100%;
-  width: 100%;
-  padding: 5em;
-  margin: 0 auto;
+background-image: url("../assets/images/hoja.jpg");
+height: 100%;
+width: 100%;
+padding-top: 5em;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
-label{
+.contacto h1{
+  
+  text-align: center;
+ font-family: roboto;
+ font-size:40px;
+ color: #333;
 
-  display: inline-block;
-  margin-bottom: .5em;
+}
+
+
+.formulario__primer{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.formulario__segundo{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 input{
-
-display: block;
-padding: .4em .7em;
-margin-bottom: 1.5em;
+  width: 100%;
+  height: 55px;
+  padding: 0 25px;
+  border: 1px solid #fff ;
+  border-radius:  50px;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  margin-bottom: 1.5em;
 }
 
 textarea{
-
+  width: 100%;
+  height: 145px;;
+  padding: 0 25px;
+  padding-top: 15px;
+  resize: none;
+  border: 1px solid #fff;
+  border-radius:  25px;
   display: block;
-  padding: .4em .7em;
-  }
+  font-family: inherit;
+  font-size: inherit;
+  overflow: auto;
+  line-height: inherit;
+  margin-bottom: 1.5em;
+}
 
 input[type=submit] {
-
+  width: 100%;
   display: inline-block;
   text-align: center;
   font-weight: 400;
   margin-top:  1em;
   margin-bottom: 1em;
   text-transform: uppercase;
-  
+  background-color: darkgreen;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  padding: 0 40px;
+  font-size: 16px;
+  margin: 0 auto; 
+  color: white;
 }   
 
 
-
+@media (min-width: 700px) {
+  input[type=submit] {
+    width: 20%;
+  }   
+}
 
 
                                             /*Footer*/
